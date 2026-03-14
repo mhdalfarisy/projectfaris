@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, Routes} from "react-router-dom";
-import withRouter from "../hooks/withRouter"
+import { Route, Routes } from "react-router-dom";
+import withRouter from "../hooks/withRouter";
 import { Home } from "../pages/home";
 import { Portfolio } from "../pages/portfolio";
 import { ContactUs } from "../pages/contact";
@@ -20,10 +20,12 @@ const AnimatedRoutes = withRouter(({ location }) => (
       unmountOnExit
     >
       <Routes location={location}>
+        {/* Path tetap sama, namun HashRouter akan otomatis menambahkan /#/ di depannya */}
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contact" element={<ContactUs />} />
+        {/* Mengarahkan halaman yang tidak dikenal kembali ke Home */}
         <Route path="*" element={<Home />} />
       </Routes>
     </CSSTransition>
@@ -34,6 +36,7 @@ function AppRoutes() {
   return (
     <div className="s_c">
       <AnimatedRoutes />
+      {/* Socialicons di sini akan muncul di setiap halaman */}
       <Socialicons />
     </div>
   );

@@ -119,9 +119,9 @@ const dataportfolio = [{
 const contactConfig = {
     YOUR_EMAIL: "m.alfarisy797@gmail.com",
     description: "I'm open for collaboration on data analytics, warehousing, or business intelligence projects. Let's talk!",
-    YOUR_SERVICE_ID: "service_id",
-    YOUR_TEMPLATE_ID: "template_id",
-    YOUR_USER_ID: "user_id",
+    YOUR_SERVICE_ID: "service_10l3jv9",
+    YOUR_TEMPLATE_ID: "template_ed06d16",
+    YOUR_USER_ID: "AY0_67IHEaN9ytpSL",
 };
 
 const socialprofils = {

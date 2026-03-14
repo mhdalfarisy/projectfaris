@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser"; // Pastikan sudah install: npm install @emailjs/browser
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { meta } from "../../content_option";
@@ -19,8 +19,12 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata({ ...formData, loading: true });
 
+    // 1. Inisialisasi menggunakan Public Key
+    emailjs.init(contactConfig.YOUR_USER_ID);
+
+    // 2. Samakan variabel ini dengan yang ada di EmailJS Template {{ name }}, {{ message }}, dll.
     const templateParams = {
       from_name: formData.email,
       user_name: formData.name,
@@ -28,6 +32,7 @@ export const ContactUs = () => {
       message: formData.message,
     };
 
+    // 3. Hanya gunakan SATU panggil emailjs.send
     emailjs
       .send(
         contactConfig.YOUR_SERVICE_ID,
@@ -37,22 +42,25 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           setFormdata({
+            ...formData,
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Thank you for your message",
             variant: "success",
             show: true,
+            name: "", // Reset field setelah sukses
+            email: "",
+            message: "",
           });
         },
         (error) => {
-          console.log(error.text);
           setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+            ...formData,
+            loading: false,
+            alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
           });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
         }
       );
   };
@@ -81,12 +89,11 @@ export const ContactUs = () => {
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
               }`}
-              onClose={() => setFormdata({ show: false })}
+              onClose={() => setFormdata({ ...formData, show: false })}
               dismissible
             >
               <p className="my-0">{formData.alertmessage}</p>

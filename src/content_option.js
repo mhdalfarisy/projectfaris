@@ -147,7 +147,7 @@ const contactConfig = {
 };
 
 const socialprofils = {
-    github: "https://github.com",
+    github: "https://github.com/mhdalfarisy",
     facebook: "https://facebook.com",
     linkedin: "https://www.linkedin.com/in/m-alfarisy97/",
     twitter: "https://twitter.com",

@@ -6,7 +6,8 @@ import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState(true);
+  // PERBAIKAN 1: Set default ke false (menu tertutup saat awal)
+  const [isActive, setActive] = useState(false);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -23,20 +24,30 @@ const Headermain = () => {
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button nav_ac" onClick={handleToggle}>
-              {isActive ? <VscGrabber /> : <VscClose />}
+              {/* PERBAIKAN 2: Jika active tampilkan Close, jika tidak tampilkan Grabber */}
+              {isActive ? <VscClose /> : <VscGrabber />}
             </button>
           </div>
         </div>
 
-        <div className={`site__navigation ${!isActive ? "menu__opend" : ""}`}>
+        {/* PERBAIKAN 3: Hapus tanda seru (!). Pakai isActive langsung untuk trigger menu__opend */}
+        <div className={`site__navigation ${isActive ? "menu__opend" : ""}`}>
           <div className="bg__menu h-100">
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item"><Link onClick={handleToggle} to="/">Home</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} to="/portfolio">Portfolio</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} to="/about">About</Link></li>
-                  <li className="menu_item"><Link onClick={handleToggle} to="/contact">Contact</Link></li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/">Home</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/portfolio">Portfolio</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/about">About</Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/contact">Contact</Link>
+                  </li>
                 </ul>
               </div>
             </div>

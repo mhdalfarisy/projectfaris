@@ -1,306 +1,170 @@
-
-/* .site__header {
-    top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+/* --- Root Layout --- */
+.site__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 30px;
+  z-index: 99999; /* Di atas segalanya */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.menu__button {
-    color: var(--text-color);
-}
-
-.menu__button:focus,
-.menu__button:hover {
-    color: var(--text-color);
-    box-shadow: unset;
-}
-
-.menu__button svg {
-    width: 2em;
-    height: 2em;
-    fill: var(--text-color-2);
-    color: var(--text-color-2);
-}
-
+/* --- Buttons & Logo --- */
 .nav_ac {
-    padding: 5px 15px;
-    margin: 0;
-    border: unset;
-    background: var(--primary-color);
-    font-size: 1.25rem;
-    font-family: Marcellus;
-    color: var(--text-color-2);
-    line-height: 2;
-    height: 50px;
-    font-weight: bold;
-    z-index: 1000;
+  padding: 8px 20px;
+  background: var(--primary-color);
+  font-size: 1.2rem;
+  font-family: 'Marcellus', serif;
+  color: var(--text-color-2);
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 100000;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.3s;
 }
 
 .nav_ac:hover {
-    color: var(--text-color-2);
-}
-
-.br-top,
-.br-bottom,
-.br-right,
-.br-left {
-    position: fixed;
-    z-index: 999999;
-    background: var(--primary-color);
-}
-
-.br-top {
-    top: 0;
-    height: 10px;
-    left: 0;
-    width: 100%;
-}
-
-.br-bottom {
-    bottom: 0;
-    left: 0;
-    height: 10px;
-    width: 100%;
-}
-
-.br-right {
-    width: 10px;
-    right: 0;
-    top: 0;
-    height: 100%;
-}
-
-.br-left {
-    width: 10px;
-    left: 0;
-    top: 0;
-    height: 100%;
-}
-
-.cortina__wrapper-menu {
-    position: relative;
-    width: 100%;
-    padding-top: 5em;
-    padding-bottom: 3em;
-    height: 100%;
-    overflow-y: auto;
-}
-
-.site__navigation {
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    visibility: hidden;
-}
-
-.menu__opend {
-    visibility: visible !important;
-}
-
-.main__menu_ul,
-.menu_right {
-    opacity: 0;
-    position: relative;
-    transition: 0.5s;
-    transition-delay: 0s;
-    visibility: hidden;
-    z-index: 100;
-}
-
-.menu_right {
-    text-align: center;
-}
-
-.site__navigation.menu__opend .main__menu_ul,
-.site__navigation.menu__opend .menu_right {
-    opacity: 1;
-    transition-delay: 0.6s;
-    visibility: visible;
-}
-
-.site__navigation .main__menu_ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.site__navigation .main__menu_ul li a {
-    color: var(--text-color);
-    display: block;
-    font-size: 2.5rem;
-    text-decoration: none;
-}
-
-.bg__menu {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-color);
-    will-change: transform;
-    transform: translateY(-100%);
-    transition: .5s ease all;
-}
-
-.menu__opend .bg__menu {
-    transform: translateY(0);
-}
-
-.menu__wrapper {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden auto;
-}
-
-.the_menu {
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-    padding-left: 0;
-}
-
-@media (min-width: 992px) {
-    .menu__container {
-        margin-left: 33.3333%;
-    }
-    .the_menu {
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-    }
-}
-
-.the_menu .menu_item>a {
-    color: var(--text-color-2);
-    line-height: 1;
-    font-size: 2rem;
-    display: inline-block;
-    position: relative;
-    transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
-    padding: 4px 0px;
-    text-decoration: none;
-    font-family: Marcellus;
-}
-
-.the_menu .menu_item>a:hover {
-    color: var(--text-color-3);
-}
-
-@media (min-width: 768px) {
-    .the_menu .menu_item>a {
-        font-size: 4.8vw;
-    }
-}
-
-.menu_footer {
-    bottom: 0;
-    font-family: Marcellus;
-    font-size: 14px;
-    background: var(--primary-color);
-}
-
-.menu_footer a {
-    color: var(--text-color-2);
-    margin-right: 10px;
-    text-decoration: none;
-} */
-
-
-.site__header {
-    top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+  color: var(--text-color-3);
+  opacity: 0.8;
 }
 
 .menu__button {
-    color: var(--text-color);
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 100000;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
 }
 
 .menu__button svg {
-    width: 2em;
-    height: 2em;
-    fill: var(--text-color-2);
+  width: 2.5em;
+  height: 2.5em;
+  fill: var(--text-color-2);
 }
 
-.nav_ac {
-    padding: 5px 15px;
-    background: var(--primary-color);
-    font-size: 1.25rem;
-    font-family: Marcellus;
-    color: var(--text-color-2);
-    font-weight: bold;
-    text-decoration: none;
-    display: inline-block;
-}
-
+/* --- Navigation Overlay --- */
 .site__navigation {
-    height: 100% !important;
-    left: 0 !important;   /* Paksa posisi di kiri */
-    right: auto !important; /* Matikan posisi kanan */
-    width: 100% !important;
-    max-width: 450px !important; 
-    position: fixed !important;
-    visibility: hidden;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 450px; /* Style samping ala panel data */
+  z-index: 9999;
+  visibility: hidden;
+  pointer-events: none; /* Klik tidak tembus saat tertutup */
+  transition: visibility 0.5s;
 }
 
+.site__navigation.menu__opend {
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* --- Background Slide Effect --- */
 .bg__menu {
-    background-color: var(--primary-color);
-    /* Paksa geser horizontal dari kiri ke kanan */
-    transform: translateX(-100%) !important; 
-    transition: .5s cubic-bezier(0.77, 0.2, 0.05, 1) all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  transform: translateX(-100%); /* Start dari kiri luar layar */
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .menu__opend .bg__menu {
-    transform: translateX(0) !important;
+  transform: translateX(0);
+}
+
+/* --- Menu Links --- */
+.menu__wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
 }
 
 .the_menu {
-    padding-top: 15vh;
-    padding-left: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.the_menu .menu_item {
-    list-style: none;
-    margin: 15px 0;
+.menu_item {
+  margin: 25px 0;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: 0.4s ease;
 }
 
-.the_menu .menu_item > a {
-    color: var(--text-color-2);
-    font-size: 2.5rem;
-    text-decoration: none;
-    font-family: Marcellus;
+.menu__opend .menu_item {
+  opacity: 1;
+  transform: translateX(0);
 }
 
+/* Delay animasi muncul satu-satu */
+.menu__opend .menu_item:nth-child(1) { transition-delay: 0.2s; }
+.menu__opend .menu_item:nth-child(2) { transition-delay: 0.3s; }
+.menu__opend .menu_item:nth-child(3) { transition-delay: 0.4s; }
+.menu__opend .menu_item:nth-child(4) { transition-delay: 0.5s; }
+
+.menu_item a {
+  color: var(--text-color-2);
+  font-size: 2.8rem;
+  text-decoration: none;
+  font-family: 'Marcellus', serif;
+  transition: 0.3s;
+}
+
+.menu_item a:hover {
+  padding-left: 10px;
+  color: var(--text-color-3);
+}
+
+/* --- Footer Nav --- */
 .menu_footer {
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    z-index: 100;
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+  font-family: 'Marcellus', serif;
 }
 
 .menu_footer a {
-    color: var(--text-color-2);
-    margin-right: 15px;
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--text-color-2);
+  margin-right: 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-/* Borders */
+/* --- Decorative Borders --- */
 .br-top, .br-bottom, .br-right, .br-left {
-    position: fixed;
-    z-index: 999999;
-    background: var(--primary-color);
+  position: fixed;
+  z-index: 100001;
+  background: var(--primary-color);
 }
 .br-top { top: 0; height: 10px; left: 0; width: 100%; }
 .br-bottom { bottom: 0; left: 0; height: 10px; width: 100%; }
 .br-right { width: 10px; right: 0; top: 0; height: 100%; }
 .br-left { width: 10px; left: 0; top: 0; height: 100%; }
 
+/* --- Mobile Fix --- */
 @media (max-width: 767px) {
-    .site__navigation { max-width: 100%; }
+  .site__navigation {
+    max-width: 100%;
+  }
+  .menu_item a {
+    font-size: 2rem;
+  }
+  .menu__wrapper {
+    padding-left: 40px;
+  }
 }

@@ -87,8 +87,8 @@ const dataportfolio = [{
 ];
 
 const contactConfig = {
-    YOUR_EMAIL: "mhdalfarisy@example.com", // Ganti dengan email aslimu
-    YOUR_FONE: "+628xxxxxx", // Ganti dengan nomor aslimu
+    YOUR_EMAIL: "m.alfarisy797@gmail.com", // Ganti dengan email aslimu
+    // YOUR_FONE: "+628xxxxxx", // Ganti dengan nomor aslimu
     description: "I'm open for collaboration on data analytics, warehousing, or business intelligence projects. Let's talk!",
     YOUR_SERVICE_ID: "service_id",
     YOUR_TEMPLATE_ID: "template_id",

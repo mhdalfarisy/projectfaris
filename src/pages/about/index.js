@@ -74,21 +74,19 @@ export const About = () => {
           <Col lg="5">
             <h3 className="color_sec py-4">Skills</h3>
           </Col>
-          <Col lg="7">
+          <Col lg="7" className="d-flex flex-wrap">
             {skills.map((data, i) => {
               return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
-                  <div className="progress">
-                    <div
-                      className="progress-bar"
-                      style={{
-                        width: `${data.value}%`,
-                      }}
-                    >
-                      <div className="progress-value">{data.value}%</div>
-                    </div>
-                  </div>
+                <div key={i} className="service_ py-1">
+                  <h5 className="service__title" style={{ 
+                    border: "1px solid #333", 
+                    padding: "10px 20px", 
+                    borderRadius: "5px", 
+                    marginRight: "10px",
+                    fontSize: "1rem" 
+                  }}>
+                    {data.name}
+                  </h5>
                 </div>
               );
             })}

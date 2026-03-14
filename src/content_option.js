@@ -64,25 +64,24 @@ const worktimeline = [
     }
 ];
 
-const skills = [{
-        name: "Power BI & DAX",
-        value: 95,
+const skills = [
+    {
+        name: "Power BI (Expert DAX & Web Service)",
     },
     {
-        name: "Python",
-        value: 90,
+        name: "Python (EDA & ETL Automation)",
     },
     {
-        name: "Google BigQuery",
-        value: 85,
+        name: "SQL (PostgreSQL & SQL Server)",
     },
     {
-        name: "ETL / Data Warehousing",
-        value: 85,
+        name: "Google BigQuery (Data Warehousing)",
     },
     {
-        name: "React / Javascript",
-        value: 70,
+        name: "Airflow & Task Scheduler (Orchestration)",
+    },
+    {
+        name: "Power Automate (Workflow Automation)",
     },
 ];
 

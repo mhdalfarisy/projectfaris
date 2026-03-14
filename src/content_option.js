@@ -120,7 +120,7 @@ const contactConfig = {
     YOUR_EMAIL: "m.alfarisy797@gmail.com",
     description: "I'm open for collaboration on data analytics, warehousing, or business intelligence projects. Let's talk!",
     YOUR_SERVICE_ID: "service_10l3jv9",
-    YOUR_TEMPLATE_ID: "template_votdyp6",
+    YOUR_TEMPLATE_ID: "template_z95rt3l",
     YOUR_USER_ID: "CKkFp7XubC1kXxu-D",
 };
 

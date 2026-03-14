@@ -6,7 +6,7 @@ import { logotext, socialprofils } from "../content_option";
 import Themetoggle from "../components/themetoggle";
 
 const Headermain = () => {
-  const [isActive, setActive] = useState("false");
+  const [isActive, setActive] = useState(true);
 
   const handleToggle = () => {
     setActive(!isActive);
@@ -23,7 +23,7 @@ const Headermain = () => {
           <div className="d-flex align-items-center">
             <Themetoggle />
             <button className="menu__button nav_ac" onClick={handleToggle}>
-              {!isActive ? <VscClose /> : <VscGrabber />}
+              {isActive ? <VscGrabber /> : <VscClose />}
             </button>
           </div>
         </div>
@@ -33,37 +33,25 @@ const Headermain = () => {
             <div className="menu__wrapper">
               <div className="menu__container p-3">
                 <ul className="the_menu">
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/" className="my-3">Home</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/portfolio" className="my-3">Portfolio</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/about" className="my-3">About</Link>
-                  </li>
-                  <li className="menu_item">
-                    <Link onClick={handleToggle} to="/contact" className="my-3">Contact</Link>
-                  </li>
+                  <li className="menu_item"><Link onClick={handleToggle} to="/">Home</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} to="/portfolio">Portfolio</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} to="/about">About</Link></li>
+                  <li className="menu_item"><Link onClick={handleToggle} to="/contact">Contact</Link></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="menu_footer d-flex flex-column flex-md-row justify-content-between align-items-md-center position-absolute w-100 p-3">
             <div className="d-flex">
-              {/* Tambahkan LinkedIn agar muncul di menu navigasi */}
-              <a href={socialprofils.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href={socialprofils.github} target="_blank" rel="noopener noreferrer">Github</a>
-              <a href={socialprofils.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>
+              <a href={socialprofils.linkedin}>LinkedIn</a>
+              <a href={socialprofils.github}>Github</a>
             </div>
             <p className="copyright m-0">copyright __ {logotext}</p>
           </div>
         </div>
       </header>
-      <div className="br-top"></div>
-      <div className="br-bottom"></div>
-      <div className="br-left"></div>
-      <div className="br-right"></div>
+      <div className="br-top"></div><div className="br-bottom"></div>
+      <div className="br-left"></div><div className="br-right"></div>
     </>
   );
 };

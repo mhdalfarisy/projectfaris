@@ -100,21 +100,27 @@ const services = [
     },
 ];
 
-const dataportfolio = [{
-        img: "https://picsum.photos/400/?grayscale",
-        description: "P&L Dashboard Development using advanced DAX.",
-        link: "#",
+// const dataportfolio = [{
+//         img: "https://picsum.photos/400/?grayscale",
+//         description: "P&L Dashboard Development using advanced DAX.",
+//         link: "#",
+//     },
+const dataportfolio = [
+    {
+        img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/california_predict_house.png",
+        description: "Project Sertifikasi BNSP Data Science",
+        link: "https://github.com/mhdalfarisy/sertifikasi_bnsp_data_science", // Sesuaikan dengan link repo projectnya
     },
     {
-        img: "https://picsum.photos/400/800/?grayscale",
-        description: "ETL Pipeline automation to Google BigQuery.",
-        link: "#",
+        img: "https://p.statically.io/gh/mhdalfarisy/ETL-Trans-Jakarta/main/Diagram_ETL_Image.png",
+        description: "End-to-End ETL Pipeline for TransJakarta Transport Data.",
+        link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",
     },
     {
-        img: "https://picsum.photos/400/?grayscale",
-        description: "Churn Analysis and Machine Learning Classification.",
-        link: "#",
-    },
+        img: "https://raw.githubusercontent.com/mhdalfarisy/Final-Project-Data-Engineer/main/assets/Batch%20Processing%20Flow.jpg",
+        description: "Automated ETL Pipeline for Batch Processing to Google BigQuery.",
+        link: "https://github.com/mhdalfarisy/Final-Project-Data-Engineer",
+    },    
 ];
 
 const contactConfig = {

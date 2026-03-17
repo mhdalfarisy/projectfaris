@@ -51,7 +51,8 @@ export const About = () => {
                     <tr key={i}>
                       <th scope="row" style={{ width: "40%" }}>{data.degree}</th>
                       <td>{data.institution}</td>
-                      <td className="text-end">{data.year}</td>
+                      <td className="text-end">{data.education_education}</td>
+                      <td className="text-end">{data.year}</td>                      
                     </tr>
                   );
                 })}
@@ -69,7 +70,7 @@ export const About = () => {
             {dataabout.training && dataabout.training.map((data, i) => (
               <div className="service_ py-3" key={i}>
                 <h5 className="service__title">{data.title}</h5>
-                <p className="service_desc">Organized by {data.organizer} — {data.Note_Desc}</p>
+                {/* <p className="service_desc">Organized by {data.organizer} — {data.Note_Desc}</p> */}
                 <p className="service_desc">Organized by {data.organizer} — {data.year}</p>
               </div>
             ))}

@@ -27,28 +27,55 @@ const dataabout = {
     education: [
         {
             institution: "Universitas Pamulang",
-            degree: "Master of Science in Informatics Engineering",
-            thesis : "On Development",
+            degree: "Master of Science in Informatics Engineering (MTI)",
+            education_education : "Thesis On Development",
             year: "2025 - Present",
         },
         {
             institution: "Universitas Pasundan",
-            degree: "Bachelor of Accounting", 
-            year: "2016 - 2021",
+            degree: "Bachelor of Accounting (S.E)", 
+            education_education : "Pengaruh Profitabilitas, Corporate Social Responsibility (CSR), Ukuran Perusahaan, dan Kepemilikan Institusional terhadap Tax Avoidance: Studi Kasus pada Perusahaan Sub-Sektor Pertambangan Batu Bara yang Terdaftar di Bursa Efek Indonesia Tahun 2015–2019.",            
+            year: "2018 - 2020",
         },
+        {
+            institution: "Politeknik Negeri Lhokseumawe",
+            degree: "Diploma III (A.Md, Ak)", 
+            education_education : "Analisis Penerapan Akuntansi Kas pada Departemen PKBL dan Corporate Social Responsibility (CSR) di PT Pupuk Iskandar Muda.",            
+            year: "2015 - 2018",
+        },        
     ],
     training: [
         {
-            title: "Training Name",
-            organizer: "Penyelenggara",
-            year: "2023",
+            title: "Artificial Inteligent for Accounting System",
+            organizer: "Ruby Thalib AI Consulting",
+            year: "2025",
+        },          
+        {
+            title: "Data Engineer",
+            organizer: "Dibimbing Bootcamp",
+            year: "2024",
+        },        
+        {
+            title: "Data Science and Machine Learning",
+            organizer: "Purwadhika Digital Technology School",
+            year: "2022",
         },
+        {
+            title: "SQL (Advance Level)",
+            organizer: "Hacker Rank",
+            year: "2022",
+        },    
+        {
+            title: "Brevet A & B",
+            organizer: "Tax Tic Tax Bandung",
+            year: "2019",
+        },                      
     ],
     achievements: [
         {
             title: "Certified BNSP Data Science",
             Note_Desc : "Certified Data Science Associate",            
-            year: "2026 - 2029",
+            year: "2026 - 2028",
         },
         {
             title: "Publish Journal PROKASDADIK : Prosiding Kecerdasan, Sains Data dan Pendidikan Masa Depan",

@@ -79,7 +79,7 @@ const dataabout = {
         },
         {
             title: "Publish Journal PROKASDADIK : Prosiding Kecerdasan, Sains Data dan Pendidikan Masa Depan",
-            Note_Desc : "Vol. 4, No 1, (2026) E-ISSN: 3063-5845",
+            Note_Desc : "Vol.4, No 1, (2026) E-ISSN: 3063-5845",
             year: "2026",
         },        
     ],

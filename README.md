@@ -8,8 +8,7 @@ Personal portfolio website built with React and deployed via GitHub Pages.
 ---
 
 ## 📸 Preview
-
-[![Portfolio Preview](src/assets/images/react%20portfolio%20gif.gif)](https://mhdalfarisy.github.io/)
+![Website Demo](https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy/main/gif_web_faris.gif)
 
 https://mhdalfarisy.github.io/#
 

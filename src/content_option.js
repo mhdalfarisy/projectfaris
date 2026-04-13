@@ -200,7 +200,7 @@ const dataportfolio = [
     },
     {
         img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/Diagram_ETL_Image.png",
-        title: "End-to-End ETL Pipeline for TransJakarta Transport Data",
+        title: "Automated ETL Pipeline for TransJakarta Transport Data (Task Scheduler-Based)",
         description: "Built an automated data pipeline that extracts, transforms, and loads TransJakarta transaction datasets. The system performs data cleaning, normalization, and time-series preparation before loading into Google BigQuery, with automated logging and monitoring capabilities.",
         tech_stack: ["Python", "Pandas", "Google BigQuery", "CSV Processing", "Data Validation", "Logging"],
         link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",

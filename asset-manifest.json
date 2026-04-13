@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.54815c69.css",
-    "main.js": "/static/js/main.cac5ec63.js",
+    "main.js": "/static/js/main.f6ac9b89.js",
     "static/media/Flow_Chatbot_Telegram_Claude.png": "/static/media/Flow_Chatbot_Telegram_Claude.71f3fb3957d309a54e46.png",
     "index.html": "/index.html",
     "main.54815c69.css.map": "/static/css/main.54815c69.css.map",
-    "main.cac5ec63.js.map": "/static/js/main.cac5ec63.js.map"
+    "main.f6ac9b89.js.map": "/static/js/main.f6ac9b89.js.map"
   },
   "entrypoints": [
     "static/css/main.54815c69.css",
-    "static/js/main.cac5ec63.js"
+    "static/js/main.f6ac9b89.js"
   ]
 }

@@ -205,16 +205,16 @@ const dataportfolio = [
         tech_stack: ["Python", "Pandas", "Google BigQuery", "CSV Processing", "Data Validation", "Logging"],
         link: "https://github.com/mhdalfarisy/ETL-Trans-Jakarta",
     },
-    {
+    { 
         img: "https://raw.githubusercontent.com/mhdalfarisy/mhdalfarisy.github.io/main/src/assets/images/Batch_Processing_Flow_airflow.png",
-        title: "End-to-End ETL Pipeline for Monitoring Factory Workers’ Daily Performance & Attrition",
+        title: "Automated ETL Pipeline for Monitoring Factory Workers’ Daily Performance & Attrition (Apache Airflow)",
         description: "Designed and implemented an enterprise-grade ETL pipeline using Apache Airflow for batch processing. The system monitors and tracks factory workers’ daily performance metrics while analyzing attrition patterns, enabling data-driven HR insights and workforce optimization.",
         tech_stack: ["Python", "Apache Airflow", "Pandas", "SQL", "Data Warehousing", "Batch Processing", "DAG Orchestration"],
         link: "https://github.com/mhdalfarisy/Final-Project-Data-Engineer",
     },
     {
         img: chatbotImg,
-        title: "AI Chatbot for Personal Finance Tracking",
+        title: "AI Chatbot for Personal Finance Tracking (Telegram Bot with Claude API)",
         description: "Developed a conversational AI chatbot that helps users record and manage daily financial transactions through natural language interactions. The chatbot provides an intuitive and interactive solution for personal finance tracking with persistent data storage.",
         tech_stack: ["Python", "Claude API", "Telegram Bot API", "PostgreSQL", "NLP"],
         link: "https://github.com/mhdalfarisy/chatbot-catat-duitku",
